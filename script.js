@@ -125,8 +125,7 @@ function HighJump(score, AwardCeremony){
 function AwardCeremony(score){
     
     let sortedArr = Object.keys(score).sort((a, b) => score[a] - score[b]);
-    let n = sortedArr.length;
-    
+    let n = sortedArr.length; 
     console.log(`${sortedArr[n-1]} Came First with ${score[sortedArr[n-1]]} points`);
     console.log(`${sortedArr[n-2]} Came Second with ${score[sortedArr[n-2]]} points`);
     console.log(`${sortedArr[n-3]} Came Third with ${score[sortedArr[n-3]]} points`);
